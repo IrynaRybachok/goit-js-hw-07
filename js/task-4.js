@@ -8,7 +8,8 @@ function hundleSubmit(event) {
     const elements = event.currentTarget.elements;
 
     if (!elements.email.value.trim() || !elements.password.value.trim()){
-        alert("All form fields must be filled in")
+        alert("All form fields must be filled in");
+        return;
     } else {
         const info = {
             email: elements.email.value.trim(),
